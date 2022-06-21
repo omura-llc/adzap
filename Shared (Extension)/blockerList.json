@@ -131,6 +131,16 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?a-ads\\.com[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": ["third-party"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?aamsitecertifier\\.com[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": ["third-party"]
@@ -732,6 +742,16 @@
   {
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?adprofits\\.ru[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": ["third-party"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?adpone\\.com[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": ["third-party"]
     },
@@ -3463,6 +3483,16 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?onclickalgo\\.com[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": ["third-party"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?oogala\\.com[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": ["third-party"]
@@ -3735,6 +3765,16 @@
   {
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?pulsemgr\\.com[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": ["third-party"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?promo\\.worldofwarships\\.ru[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": ["third-party"]
     },
@@ -5186,6 +5226,16 @@
   {
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?yottos\\.com[:/]",
+      "url-filter-is-case-sensitive": true,
+      "load-type": ["third-party"]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?:/+([^/:]+\\.)?youradexchange\\.com[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": ["third-party"]
     },
