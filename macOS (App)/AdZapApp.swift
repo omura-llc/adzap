@@ -4,7 +4,7 @@ import SwiftUI
 struct AdZapApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
-    @ObservedObject var contentBlockerState = ContentBlockerState(withIdentifier: "co.omura.adzap.macos.contentblocker")
+    @ObservedObject var contentBlockerState = ContentBlockerState(withIdentifier: "co.omura.adzap.macos")
 
     var body: some Scene {
         WindowGroup {
