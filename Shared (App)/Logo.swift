@@ -19,11 +19,11 @@ struct Logo: View {
                     .padding(10)
 
                 Text(enabled ? "Ads Zapped!" : "disabled")
-                    .font(Font.custom("DIN Condensed Bold", size: min(proxy.size.height, proxy.size.width) * 0.25))
+                    .font(Font.custom("DIN Condensed Bold", size: min(proxy.size.height, proxy.size.width) * 0.2))
                     .shadow(radius: enabled ? 1 : 0, y: 1)
                     .foregroundColor(.white)
                     .rotationEffect(.degrees(enabled ? 0 : -15))
-                    .lineLimit(nil)
+                    .lineLimit(2)
                     .multilineTextAlignment(.center)
                     .frame(width: proxy.size.width - 20)
             }
