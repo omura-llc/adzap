@@ -20,3 +20,11 @@ Ad Zap is a fork of "Ka-Block!", Copyright 2015-2019 David Graham & Josh Peek.
 
 Ad Zap is released under the terms of the MIT license. Check the LICENSE
 file for details.
+
+## Privacy
+
+Omura LLC does not collect ANY information from the use of Ad Zap.
+
+Ad Zap does not require any special permissions on iOS.
+
+No data is sent from the device, nor is anything retrieved from a remote server.
