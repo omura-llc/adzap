@@ -12,7 +12,9 @@ An extension designed to block a handpicked array of ad domains on Safari for iO
 
 ## Installation
 
-Ad Zap is now available for beta testing: https://testflight.apple.com/join/mlzEL02Q
+Ad Zap is now available on the App Store: https://apps.apple.com/us/app/ad-zap/id6478939081
+
+Beta versions are available on TestFlight: https://testflight.apple.com/join/mlzEL02Q
 
 ## License
 
