@@ -19,22 +19,42 @@ struct HomeScreen: View {
                     .padding(.vertical, 20.0)
                     .background(Color("UpperBackgroundColor"))
 
-                Text(isEnabled ? "instructions-enabled" : "instructions-disabled")
-                    .font(.system(size: 17))
-                    .multilineTextAlignment(.center)
-                    .padding()
-                    .frame(height: proxy.size.height / 3)
-                
-                Text("\(version) (\(build))")
-                    .font(.system(size: 14))
-                    .multilineTextAlignment(.center)
-                    .padding(.bottom, 50.0)
+                VStack {
+                    Spacer()
+                    
+                    Text(isEnabled ? "instructions-enabled" : "instructions-disabled")
+                        .font(.system(size: 17))
+                        .multilineTextAlignment(.center)
+                        .padding(.top)
+                    
+                    if isEnabled {
+                        Spacer()
+                    } else {
+                        Text("Open Settings")
+                            .foregroundColor(.blue)
+                            .onTapGesture {
+                                if let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) {
+                                    UIApplication.shared.open(url)
+                                }
+                            }
+                            .font(.system(size: 17))
+                            .multilineTextAlignment(.center)
+                            .padding(.vertical)
+                    }
 
-                Spacer()
+                    Text("\(version) (\(build))")
+                        .font(.system(size: 17))
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom)
+                    
+                    Spacer()
+                }
+                .frame(width: proxy.size.width, height: proxy.size.height / 2.5)
+                .background(Color("LowerBackgroundColor"))
             }
-            .background(Color("LowerBackgroundColor"))
         }
         .ignoresSafeArea()
+
     }
 }
 
