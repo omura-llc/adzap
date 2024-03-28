@@ -16,7 +16,7 @@ struct Logo: View {
 
                 Circle()
                     .foregroundColor(stateColor)
-                    .padding(10)
+                    .padding(20)
 
                 Text(enabled ? "Ads Zapped!" : "disabled")
                     .font(Font.custom("DIN Condensed Bold", size: min(proxy.size.height, proxy.size.width) * 0.2))
