@@ -3,6 +3,14 @@ import SwiftUI
 struct HomeScreen: View {
     var isEnabled: Bool
 
+    private var version: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
+    }
+        
+    private var build: String {
+        Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
+    }
+    
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -16,6 +24,13 @@ struct HomeScreen: View {
                     .multilineTextAlignment(.center)
                     .padding()
                     .frame(height: proxy.size.height / 3)
+                
+                Text("\(version) (\(build))")
+                    .font(.system(size: 14))
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 50.0)
+
+                Spacer()
             }
             .background(Color("LowerBackgroundColor"))
         }
