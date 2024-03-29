@@ -1,8 +1,16 @@
 import SwiftUI
+import AudioToolbox
+
+func playSound() {
+    let systemSoundID: SystemSoundID = 1051
+    AudioServicesPlaySystemSound(systemSoundID)
+}
 
 struct HomeScreen: View {
     var isEnabled: Bool
-
+    @State private var colorIndex = 0
+    private let logoColors = [Color.logoColorClover, Color.logoColorCherry, Color.logoColorOmura, Color.logoColorTangerine, Color.logoColorGrape, Color.logoColorSunshine]
+    
     private var version: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
     }
@@ -14,7 +22,7 @@ struct HomeScreen: View {
     var body: some View {
         GeometryReader { proxy in
             VStack {
-                Logo(enabled: isEnabled)
+                Logo(enabled: isEnabled, logoColor: logoColors[colorIndex])
                     .padding()
                     .padding(.vertical, 20.0)
                     .background(Color("UpperBackgroundColor"))
@@ -54,7 +62,19 @@ struct HomeScreen: View {
             }
         }
         .ignoresSafeArea()
-
+        .gesture(
+            DragGesture()
+                .onEnded { gesture in
+                    if isEnabled {
+                        let verticalMovement = gesture.translation.height
+                        let swipeDistance: CGFloat = 400
+                        if verticalMovement > swipeDistance {
+                            colorIndex = (colorIndex + 1) % logoColors.count
+                            playSound()
+                        }
+                    }
+                }
+        )
     }
 }
 

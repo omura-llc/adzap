@@ -2,11 +2,12 @@ import SwiftUI
 
 struct Logo: View {
     var enabled: Bool
+    var logoColor: Color
 
     var body: some View {
         GeometryReader { proxy in
             ZStack {
-                let stateColor = enabled ? Color("LogoEnabledColor") : Color("LogoDisabledColor")
+                let stateColor = enabled ? logoColor : Color("LogoColorGray")
 
                 Circle()
                     .stroke(stateColor, lineWidth: 0.1)
@@ -17,7 +18,7 @@ struct Logo: View {
                 Circle()
                     .foregroundColor(stateColor)
                     .padding(20)
-
+                
                 Text(enabled ? "Ads Zapped!" : "disabled")
                     .font(Font.custom("DIN Condensed Bold", size: min(proxy.size.height, proxy.size.width) * 0.2))
                     .shadow(radius: enabled ? 1 : 0, y: 1)
@@ -36,13 +37,13 @@ struct Logo: View {
 struct Logo_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Logo(enabled: false)
+            Logo(enabled: false, logoColor: .logoColorGray)
                 .preferredColorScheme(.light)
-            Logo(enabled: true)
+            Logo(enabled: true, logoColor: .logoColorClover)
                 .preferredColorScheme(.light)
-            Logo(enabled: false)
+            Logo(enabled: false, logoColor: .logoColorGray)
                 .preferredColorScheme(.dark)
-            Logo(enabled: true)
+            Logo(enabled: true, logoColor: .logoColorClover)
                 .preferredColorScheme(.dark)
         }
         .previewLayout(.sizeThatFits)
