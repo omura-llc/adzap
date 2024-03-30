@@ -1,20 +1,22 @@
 import SwiftUI
-import AudioToolbox
+import UIKit
 
-func playSound() {
-    let systemSoundID: SystemSoundID = 1051
-    AudioServicesPlaySystemSound(systemSoundID)
+func goodVibes() {
+    let generator = UIImpactFeedbackGenerator(style: .heavy)
+    generator.prepare()
+    generator.impactOccurred(intensity: 1.0)
 }
 
 struct HomeScreen: View {
     var isEnabled: Bool
     @State private var colorIndex = 0
+    
     private let logoColors = [Color.logoColorClover, Color.logoColorCherry, Color.logoColorOmura, Color.logoColorTangerine, Color.logoColorGrape, Color.logoColorSunshine]
     
     private var version: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? ""
     }
-        
+    
     private var build: String {
         Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? ""
     }
@@ -23,62 +25,57 @@ struct HomeScreen: View {
         GeometryReader { proxy in
             VStack {
                 Logo(enabled: isEnabled, logoColor: logoColors[colorIndex])
-                    .padding()
-                    .padding(.vertical, 20.0)
-                    .background(Color("UpperBackgroundColor"))
-
-                VStack {
-                    Spacer()
-                    
-                    Text(isEnabled ? "instructions-enabled" : "instructions-disabled")
-                        .font(.system(size: 17))
-                        .multilineTextAlignment(.center)
-                        .padding(.top)
-                    
-                    if isEnabled {
-                        Spacer()
-                    } else {
-                        Text("Open Settings")
-                            .foregroundColor(.blue)
-                            .onTapGesture {
-                                if let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) {
-                                    UIApplication.shared.open(url)
+                    .padding(.top, 100)
+                    .padding(.horizontal, 20)
+                    .frame(height: proxy.size.height / 1.5)
+                    .gesture(
+                        DragGesture()
+                            .onEnded { gesture in
+                                if isEnabled {
+                                    let horizontalMovement = gesture.translation.width
+                                    let swipeDistance: CGFloat = 200
+                                    if abs(horizontalMovement) > swipeDistance {
+                                        colorIndex = (colorIndex + 1) % logoColors.count
+                                        goodVibes()
+                                    }
                                 }
                             }
-                            .font(.system(size: 17))
-                            .multilineTextAlignment(.center)
-                            .padding(.vertical)
-                    }
+                    )
 
-                    Text("\(version) (\(build))")
+                Spacer()
+                
+                Text(isEnabled ? "instructions-enabled" : "instructions-disabled")
+                    .font(.system(size: 17))
+                    .multilineTextAlignment(.center)
+                    .padding(.top)
+                
+                if isEnabled {
+                    Spacer()
+                } else {
+                    Text("Open Settings")
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            if let url = URL(string: UIApplication.openSettingsURLString), UIApplication.shared.canOpenURL(url) {
+                                UIApplication.shared.open(url)
+                            }
+                        }
                         .font(.system(size: 17))
                         .multilineTextAlignment(.center)
-                        .padding(.bottom)
-                    
-                    Spacer()
+                        .padding(.vertical)
                 }
-                .frame(width: proxy.size.width, height: proxy.size.height / 2.5)
-                .background(Color("LowerBackgroundColor"))
+
+                Text("\(version) (\(build))")
+                    .font(.system(size: 16))
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom)
+                
+                Spacer()
             }
         }
         .ignoresSafeArea()
-        .gesture(
-            DragGesture()
-                .onEnded { gesture in
-                    if isEnabled {
-                        let verticalMovement = gesture.translation.height
-                        let swipeDistance: CGFloat = 400
-                        if verticalMovement > swipeDistance {
-                            colorIndex = (colorIndex + 1) % logoColors.count
-                            playSound()
-                        }
-                    }
-                }
-        )
     }
 }
 
-@available(macOS 12.0, *)
 struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group {
@@ -93,7 +90,7 @@ struct HomeScreen_Previews: PreviewProvider {
 
             HomeScreen(isEnabled: true)
                 .preferredColorScheme(.light)
-                .previewDevice("iPad Pro (12.9-inch) (5th generation)")
+                .previewDevice("iPhone 15")
         }
         .previewLayout(.device)
     }

@@ -7,30 +7,25 @@ struct Logo: View {
     var body: some View {
         GeometryReader { proxy in
             ZStack {
-                let stateColor = enabled ? logoColor : Color("LogoColorGray")
-
-                Circle()
-                    .stroke(stateColor, lineWidth: 0.1)
-
-                Circle()
-                    .foregroundColor(Color.white)
-
-                Circle()
-                    .foregroundColor(stateColor)
-                    .padding(20)
+                Rectangle()
+                    .foregroundColor(Color("BorderColor"))
+                    .frame(idealWidth:400, maxWidth: 600, maxHeight: 150)
+                    
+                Rectangle()
+                    .foregroundColor(enabled ? logoColor : Color("LogoColorGray"))
+                    .padding(10)
+                    .frame(idealWidth:400, maxWidth: 600, maxHeight: 150)
                 
                 Text(enabled ? "Ads Zapped!" : "disabled")
-                    .font(Font.custom("DIN Condensed Bold", size: min(proxy.size.height, proxy.size.width) * 0.2))
-                    .shadow(radius: enabled ? 1 : 0, y: 1)
+                    .font(.system(size: 50, weight: .bold, design: .rounded))
+                    .shadow(radius: 3, y: 3)
                     .foregroundColor(.white)
-                    .rotationEffect(.degrees(enabled ? 0 : -15))
-                    .lineLimit(2)
-                    .multilineTextAlignment(.center)
-                    .frame(width: proxy.size.width - 20)
+                    .rotationEffect(.degrees(enabled ? 0 : -10))
+                    .lineLimit(1)
+                    .frame(width: proxy.size.width)
             }
-            .padding(.top, 50)
+            .padding(.top)
         }
-        .frame(minWidth: 200, minHeight: 200)
     }
 }
 
@@ -46,6 +41,5 @@ struct Logo_Previews: PreviewProvider {
             Logo(enabled: true, logoColor: .logoColorClover)
                 .preferredColorScheme(.dark)
         }
-        .previewLayout(.sizeThatFits)
     }
 }
