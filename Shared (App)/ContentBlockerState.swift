@@ -14,11 +14,8 @@ class ContentBlockerState: ObservableObject {
         self.identifier = identifier
 
         let notificationName: NSNotification.Name
-        #if os(macOS)
-            notificationName = NSWindow.didBecomeMainNotification
-        #else
-            notificationName = UIApplication.didBecomeActiveNotification
-        #endif
+        
+        notificationName = UIApplication.didBecomeActiveNotification
 
         notification = NotificationCenter.default.addObserver(forName: notificationName, object: nil, queue: .main) { _ in
             self.refresh()
