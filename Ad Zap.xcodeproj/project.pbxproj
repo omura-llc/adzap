@@ -77,14 +77,14 @@
 		03346D2D26B08EA1004A268E = {
 			isa = PBXGroup;
 			children = (
-				03346D3226B08EA1004A268E /* Shared (App) */,
-				03346D3B26B08EA2004A268E /* Shared (Extension) */,
+				03346D3226B08EA1004A268E /* App */,
+				03346D3B26B08EA2004A268E /* Extension */,
 				037870CB26EA993100075102 /* iOS (App) */,
 				03346D4B26B08EA2004A268E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		03346D3226B08EA1004A268E /* Shared (App) */ = {
+		03346D3226B08EA1004A268E /* App */ = {
 			isa = PBXGroup;
 			children = (
 				03346D3A26B08EA2004A268E /* Assets.xcassets */,
@@ -92,17 +92,17 @@
 				036A5C6D26C44E1500A76915 /* HomeScreen.swift */,
 				0397975C26BC86460014BF79 /* Logo.swift */,
 			);
-			path = "Shared (App)";
+			path = App;
 			sourceTree = "<group>";
 		};
-		03346D3B26B08EA2004A268E /* Shared (Extension) */ = {
+		03346D3B26B08EA2004A268E /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				03AB91F726BB20CE00C6DFFD /* ContentBlockerRequestHandler.swift */,
 				03AB91F526BB20CE00C6DFFD /* blockerList.json */,
 				0381081526CC5794008A912C /* Info.plist */,
 			);
-			path = "Shared (Extension)";
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		03346D4B26B08EA2004A268E /* Products */ = {
@@ -379,7 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54JX3YSE94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
+				INFOPLIST_FILE = Extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ad Zap";
 				INFOPLIST_KEY_CFBundleExecutable = "Ad Zap Extension";
 				INFOPLIST_KEY_CFBundleName = "Ad Zap Extension";
@@ -412,7 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54JX3YSE94;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Shared (Extension)/Info.plist";
+				INFOPLIST_FILE = Extension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Ad Zap";
 				INFOPLIST_KEY_CFBundleExecutable = "Ad Zap Extension";
 				INFOPLIST_KEY_CFBundleName = "Ad Zap Extension";

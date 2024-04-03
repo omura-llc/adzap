@@ -2,7 +2,7 @@
 
 An extension designed to block a handpicked array of ad domains on Safari for iOS.
 
-<img src="/Shared%20(App)/Assets.xcassets/AppIcon.appiconset/zapper.png" width="256" height="256" alt="Ad Zap logo">
+<img src="/App/Assets.xcassets/AppIcon.appiconset/zapper.png" width="256" height="256" alt="Ad Zap logo">
 
 ## Goals
 
