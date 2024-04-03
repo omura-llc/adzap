@@ -79,7 +79,6 @@
 			children = (
 				03346D3226B08EA1004A268E /* App */,
 				03346D3B26B08EA2004A268E /* Extension */,
-				037870CB26EA993100075102 /* iOS (App) */,
 				03346D4B26B08EA2004A268E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,9 +86,11 @@
 		03346D3226B08EA1004A268E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				03AB922626BB254800C6DFFD /* AdZapApp.swift */,
 				03346D3A26B08EA2004A268E /* Assets.xcassets */,
 				0381081226CC50D9008A912C /* ContentBlockerState.swift */,
 				036A5C6D26C44E1500A76915 /* HomeScreen.swift */,
+				036C977F273851FD00170DF1 /* Localizable.strings */,
 				0397975C26BC86460014BF79 /* Logo.swift */,
 			);
 			path = App;
@@ -112,15 +113,6 @@
 				03346D6826B08EA2004A268E /* Ad Zap Extension.appex */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		037870CB26EA993100075102 /* iOS (App) */ = {
-			isa = PBXGroup;
-			children = (
-				03AB922626BB254800C6DFFD /* AdZapApp.swift */,
-				036C977F273851FD00170DF1 /* Localizable.strings */,
-			);
-			path = "iOS (App)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
