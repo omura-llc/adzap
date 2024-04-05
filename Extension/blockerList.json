@@ -1242,6 +1242,30 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://adc3\\-launch\\.adcolony\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://ads30\\.adcolony\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://adtago\\.s3\\.amazonaws\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -4768,6 +4792,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://events3alt\\.adcolony\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://rcm-.*\\.amazon\\.",
       "url-filter-is-case-sensitive": true,
       "load-type": [
@@ -6282,6 +6318,18 @@
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?wmcdp\\.io[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://wd\\.adcolony\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
