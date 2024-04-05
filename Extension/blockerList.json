@@ -4924,6 +4924,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://log\\.byteoversea\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://log\\.pinterest\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
