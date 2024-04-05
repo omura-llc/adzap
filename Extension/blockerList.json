@@ -1434,6 +1434,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://advertising\\.apple\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://advertising\\.yahoo\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1579,6 +1591,18 @@
   {
     "trigger": {
       "url-filter": "^https?://analyticsengine\\.s3\\.amazonaws\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://api\\-adservices\\.apple\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -2384,6 +2408,18 @@
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?content-ad\\.net[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://books\\-analytics\\-events\\.apple\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
@@ -5188,6 +5224,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://iadsdk\\.apple\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://identify\\.hotjar\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -5248,7 +5296,43 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://metrics\\.icloud\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://metrics\\.mzstatic\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://metrika\\.yandex\\.ru[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://notes\\-analytics\\-events\\.apple\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -6893,6 +6977,18 @@
   {
     "trigger": {
       "url-filter": "^https?://wd\\.adcolony\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://weather\\-analytics\\-events\\.apple\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
