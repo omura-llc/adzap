@@ -1278,7 +1278,67 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://ads\\-api\\.tiktok\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://ads\\-api\\.twitter\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://ads\\-sg\\.tiktok\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://ads\\.linkedin\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://ads\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://ads\\.tiktok\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -1338,6 +1398,30 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://an\\.facebook\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://analytics\\-sg\\.tiktok\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://analytics\\.google\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1362,7 +1446,31 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://analytics\\.pointdrive\\.linkedin\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://analytics\\.s3\\.amazonaws\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://analytics\\.tiktok\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -2168,6 +2276,18 @@
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?content-ad\\.net[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://business\\-api\\.tiktok\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
@@ -4876,6 +4996,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://events\\.reddit\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://events\\.redditmedia\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -4949,6 +5081,18 @@
   {
     "trigger": {
       "url-filter": "^https?://log\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://pixel\\.facebook\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -6053,6 +6197,18 @@
   {
     "trigger": {
       "url-filter": "^https?://script\\.hotjar\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://static\\.ads\\-twitter\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
