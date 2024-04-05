@@ -1254,6 +1254,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://adm\\.hotjar\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://ads30\\.adcolony\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -4804,6 +4816,42 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://events\\.hotjar\\.io[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://identify\\.hotjar\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://insights\\.hotjar\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://rcm-.*\\.amazon\\.",
       "url-filter-is-case-sensitive": true,
       "load-type": [
@@ -5886,6 +5934,18 @@
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?trustx\\.org[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://script\\.hotjar\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
