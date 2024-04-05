@@ -4840,6 +4840,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://events\\.redditmedia\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://fwtracks\\.freshmarketer\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
