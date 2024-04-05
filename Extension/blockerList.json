@@ -2142,6 +2142,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://claritybt\\.freshmarketer\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://click\\.googleanalytics\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -4817,6 +4829,18 @@
   {
     "trigger": {
       "url-filter": "^https?://events\\.hotjar\\.io[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://fwtracks\\.freshmarketer\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
