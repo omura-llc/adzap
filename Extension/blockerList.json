@@ -1278,6 +1278,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://ads\\.youtube\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://adtago\\.s3\\.amazonaws\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
