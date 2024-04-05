@@ -1350,6 +1350,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://ads\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://ads\\.youtube\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1374,7 +1386,31 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://adtech\\.yahooinc\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://advertising\\-api\\-eu\\.amazon\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://advertising\\.yahoo\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -1458,6 +1494,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://analytics\\.query\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://analytics\\.s3\\.amazonaws\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1471,6 +1519,18 @@
   {
     "trigger": {
       "url-filter": "^https?://analytics\\.tiktok\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://analytics\\.yahoo\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -5044,6 +5104,30 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://gemini\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://geo\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://identify\\.hotjar\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -5080,7 +5164,31 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://log\\.fc\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://log\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://partnerads\\.ysm\\.yahoo\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -6666,6 +6774,30 @@
     "trigger": {
       "url-filter": "^https?:/+([^/:]+\\.)?wmcdp\\.io[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://udc\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://udcm\\.yahoo\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
