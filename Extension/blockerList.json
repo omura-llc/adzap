@@ -1254,6 +1254,30 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://adfox\\.yandex\\.ru[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://adfstat\\.yandex\\.ru[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://adm\\.hotjar\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1422,6 +1446,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://advertising\\.yandex\\.ru[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://advice\\-ads\\.s3\\.amazonaws\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1543,6 +1579,18 @@
   {
     "trigger": {
       "url-filter": "^https?://analyticsengine\\.s3\\.amazonaws\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://appmetrica\\.yandex\\.ru[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -5080,6 +5128,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://extmaps\\-api\\.yandex\\.net[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://freshmarketer\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -5177,6 +5237,30 @@
   {
     "trigger": {
       "url-filter": "^https?://log\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://metrika\\.yandex\\.ru[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://offerwall\\.yandex\\.net[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
