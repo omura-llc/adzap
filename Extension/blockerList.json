@@ -1278,6 +1278,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://ads\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://ads\\.youtube\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
@@ -1327,6 +1339,18 @@
   {
     "trigger": {
       "url-filter": "^https?://analytics\\.google\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://analytics\\.pinterest\\.com[:/]",
       "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
@@ -4900,6 +4924,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://log\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://rcm-.*\\.amazon\\.",
       "url-filter-is-case-sensitive": true,
       "load-type": [
@@ -6016,6 +6052,18 @@
   },
   {
     "trigger": {
+      "url-filter": "^https?://trk\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
       "url-filter": "^https?://try\\.abtasty\\.com[:/]",
       "url-filter-is-case-sensitive": true,
       "load-type": [
@@ -6462,6 +6510,18 @@
     "trigger": {
       "url-filter": "^https?://widget\\.perfectmarket\\.com[:/]",
       "url-filter-is-case-sensitive": true,
+      "load-type": [
+        "third-party"
+      ]
+    },
+    "action": {
+      "type": "block"
+    }
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://widgets\\.pinterest\\.com[:/]",
+      "url-filter-is-case-sensitive": false,
       "load-type": [
         "third-party"
       ]
