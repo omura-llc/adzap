@@ -8,7 +8,7 @@
 If a site isn't loading properly, you can disable Ad Zap.\n
 In Safari, tap the 'aA' icon in the address bar and choose 'Turn off Content Blockers'.\n
 This will disable Ad Zap for the session.\n
-If you'd like to report the site or have any other problems please open an issue on GitHub.";
+To report the site, or if you have any other problems, please open an issue on GitHub.";
 
 "instructions" = "Enable Ad Zap in\nSettings → Safari → Extensions";
 
