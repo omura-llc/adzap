@@ -5,7 +5,12 @@ struct HomeScreen: View {
   @State private var colorIndex = 0
   @State private var showHelp = false
   
-  private let bannerColors = [Color.bannerColorClover, Color.bannerColorOmura, Color.bannerColorGrape, Color.bannerColorTangerine]
+  private let bannerColors = [
+    Color.clover,
+    Color.omura,
+    Color.grape,
+    Color.tangerine
+  ]
   
   private var versionBuildText: String {
     let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "N/A"

@@ -12,7 +12,7 @@ struct Banner: View {
           .frame(idealWidth:400, maxWidth: 600, maxHeight: 200)
           .font(.system(size: 50, weight: .bold, design: .rounded))
           .shadow(radius: 3, y: 1)
-          .foregroundColor(enabled ? bannerColor : Color("BannerColorCherry"))
+          .foregroundColor(enabled ? bannerColor : Color("Cherry"))
           .rotationEffect(.degrees(enabled ? 0 : -10))
           .lineLimit(1)
           .frame(width: proxy.size.width)
@@ -25,13 +25,13 @@ struct Banner: View {
 struct Banner_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      Banner(enabled: false, bannerColor: .bannerColorCherry)
+      Banner(enabled: false, bannerColor: .cherry)
         .preferredColorScheme(.light)
-      Banner(enabled: true, bannerColor: .bannerColorClover)
+      Banner(enabled: true, bannerColor: .clover)
         .preferredColorScheme(.light)
-      Banner(enabled: false, bannerColor: .bannerColorCherry)
+      Banner(enabled: false, bannerColor: .cherry)
         .preferredColorScheme(.dark)
-      Banner(enabled: true, bannerColor: .bannerColorClover)
+      Banner(enabled: true, bannerColor: .clover)
         .preferredColorScheme(.dark)
     }
   }

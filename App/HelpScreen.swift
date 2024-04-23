@@ -38,8 +38,8 @@ struct HelpScreen: View {
 struct HelpScreen_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      HelpScreen(buttonColor: .bannerColorOmura).preferredColorScheme(.light)
-      HelpScreen(buttonColor: .bannerColorGrape).preferredColorScheme(.dark)
+      HelpScreen(buttonColor: .omura).preferredColorScheme(.light)
+      HelpScreen(buttonColor: .grape).preferredColorScheme(.dark)
     }
     .previewLayout(.device)
   }
