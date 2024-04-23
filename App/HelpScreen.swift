@@ -7,17 +7,17 @@ struct HelpScreen: View {
       VStack(alignment: .leading) {
         Text(LocalizedStringKey("help-text"))
           .padding()
-        
+
         Link(destination: URL(string: "https://github.com/omura-llc/adzap/issues")!) {
           Text(LocalizedStringKey("github-issue"))
             .padding()
-            .foregroundColor(.white)
             .background(Color.omura)
             .cornerRadius(5)
+            .foregroundColor(.white)
         }
         .frame(maxWidth: .infinity)
         .multilineTextAlignment(.center)
-        
+
         Text(versionBuildText)
           .padding()
           .frame(maxWidth: .infinity)
@@ -26,7 +26,7 @@ struct HelpScreen: View {
       .padding()
     }
   }
-  
+
   private var versionBuildText: String {
     let version = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     let build = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String

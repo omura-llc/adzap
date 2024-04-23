@@ -1,8 +1,5 @@
 import SafariServices
 
-/// The state of a content blocker extension.
-///
-/// Wraps SFContentBlockerState as an ObservableObject.
 class ContentBlockerState: ObservableObject {
   let identifier: String
   
