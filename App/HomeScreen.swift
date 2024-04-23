@@ -65,7 +65,7 @@ struct HomeScreen: View {
           Spacer()
         }
         .overlay(
-          NavigationLink(destination: HelpScreen(buttonColor: bannerColors[colorIndex]), isActive: $showHelp) { EmptyView() }
+          NavigationLink(destination: HelpScreen(), isActive: $showHelp) { EmptyView() }
         )
       }
     }
@@ -98,14 +98,10 @@ struct Banner: View {
 struct HomeScreen_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      HomeScreen(isEnabled: false)
-        .preferredColorScheme(.light)
-      HomeScreen(isEnabled: true)
-        .preferredColorScheme(.light)
-      HomeScreen(isEnabled: false)
-        .preferredColorScheme(.dark)
-      HomeScreen(isEnabled: true)
-        .preferredColorScheme(.dark)
+      HomeScreen(isEnabled: false).preferredColorScheme(.light)
+      HomeScreen(isEnabled: true).preferredColorScheme(.light)
+      HomeScreen(isEnabled: false).preferredColorScheme(.dark)
+      HomeScreen(isEnabled: true).preferredColorScheme(.dark)
     }
     .previewLayout(.device)
   }

@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct HelpScreen: View {
-  var buttonColor: Color
-  
+
   var body: some View {
     ScrollView {
       VStack(alignment: .leading) {
@@ -13,7 +12,7 @@ struct HelpScreen: View {
           Text(LocalizedStringKey("github-issue"))
             .padding()
             .foregroundColor(.white)
-            .background(buttonColor)
+            .background(Color.omura)
             .cornerRadius(5)
         }
         .frame(maxWidth: .infinity)
@@ -38,8 +37,8 @@ struct HelpScreen: View {
 struct HelpScreen_Previews: PreviewProvider {
   static var previews: some View {
     Group {
-      HelpScreen(buttonColor: .omura).preferredColorScheme(.light)
-      HelpScreen(buttonColor: .grape).preferredColorScheme(.dark)
+      HelpScreen().preferredColorScheme(.light)
+      HelpScreen().preferredColorScheme(.dark)
     }
     .previewLayout(.device)
   }
