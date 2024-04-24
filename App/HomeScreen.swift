@@ -23,7 +23,6 @@ struct HomeScreen: View {
       GeometryReader { proxy in
         VStack {
           Banner(enabled: isEnabled, bannerColor: bannerColors[colorIndex])
-            //.padding(.horizontal, 20)
             .padding(.top, 80)
             .frame(height: proxy.size.height / 1.5)
             .gesture(
@@ -49,10 +48,10 @@ struct HomeScreen: View {
             }
           } else {
             Text(LocalizedStringKey("instructions"))
-              .padding(.top)
+              .padding()
               .multilineTextAlignment(.center)
             Text(LocalizedStringKey("open-settings"))
-              .padding(.vertical)
+              .padding()
               .foregroundColor(.blue)
               .multilineTextAlignment(.center)
               .onTapGesture {
@@ -81,7 +80,6 @@ struct Banner: View {
     GeometryReader { proxy in
       ZStack {
         Text(LocalizedStringKey(enabled ? "banner-enabled" : "banner-disabled"))
-          //.padding(10)
           .font(.system(size: 50, weight: .bold, design: .rounded))
           .foregroundColor(enabled ? bannerColor : Color("Cherry"))
           .frame(idealWidth:400, maxWidth: 600, maxHeight: 200)
@@ -90,7 +88,6 @@ struct Banner: View {
           .rotationEffect(.degrees(enabled ? 0 : -10))
           .shadow(radius: 3, y: 1)
       }
-      //.padding(.top)
     }
   }
 }
